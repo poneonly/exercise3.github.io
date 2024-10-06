@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <style>
+        :root {
+            --background-light: #f9f9f9;
+            --background-dark: #2c2c2c;
+            --text-light: #000;
+            --text-dark: #fff;
+            --border-light: #ccc;
+            --border-dark: #444;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-light);
+            color: var(--text-light);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .bg-dark-mode {
+            background-color: var(--background-dark);
+            color: var(--text-dark);
+        }
+
+        .sidebar {
+            border-right: 1px solid var(--border-light);
+            padding: 20px;
+            transition: border-color 0.3s;
+        }
+
+        .sidebar.bg-dark-mode {
+            border-right: 1px solid var(--border-dark);
+        }
+
+        .main-page {
+            padding: 20px;
+        }
+
+        .reviews {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid var(--border-light);
+            }
+            .sidebar.bg-dark-mode {
+                border-bottom: 1px solid var(--border-dark);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 sidebar">
+                <h1>Phuong Tran</h1>
+                <h2>Frontend Developer</h2>
+                <div class="projects">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li><a href="https://github.com/poneonly/Food-Delivery-Application" target="_blank">Food Delivery Application</a></li>
+                        <li><a href="https://github.com/poneonly/OOP_lab" target="_blank">Platform Game</a></li>
+                        <li><a href="https://github.com/poneonly/Minesweeper_Repo" target="_blank">Minesweeper Game</a></li>
+                    </ul>
+                </div>
+                <div class="work-experience">
+                    <h3>Work Experience</h3>
+                    <p><strong>OpenSource Work</strong><br>
+                    Contributed to 50 open-source projects.<br>
+                    Made my own projects with 200 GitHub stars.<br>
+                    <a href="https://github.com/poneonly" target="_blank">Visit my GitHub Profile</a></p>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <p>Graduated with a 3.2/4 GPA.<br>
+                    Language: English - IELTS 6.5.<br>
+                    Courses I took:</p>
+                    <ul>
+                        <li>Object Oriented Programming</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Database Management Principles</li>
+                    </ul>
+                </div>
+                <div class="teacher-reviews">
+                    <h3>Reviews from my Teachers</h3>
+                    <div class="reviews">
+                        <p>John Doe was a good student.</p>
+                        <p class="teacher">Jane Doe <br>Assistant Professor</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 main-page">
+                <h2>Frontend Developer</h2>
+                <div class="middle-container">
+                    <div class="left">
+                        <h3>Projects</h3>
+                        <ul>
+                            <li><a href="https://github.com/poneonly/Food-Delivery-Application" target="_blank">Food Delivery Application</a></li>
+                            <li><a href="https://github.com/poneonly/OOP_lab" target="_blank">Platform Game</a></li>
+                            <li><a href="https://github.com/poneonly/Minesweeper_Repo" target="_blank">Minesweeper Game</a></li>
+                        </ul>
+                        </div>
+                    <div class="mid">
+                        <h3>Work Experience</h3>
+                        <p>Open-source Work</p>
+                    </div>
+                    <div class="right">
+                        <h3>Education</h3>
+                        <p>Graduated with a 3.2/4 GPA.<br>
+                        Language: English - IELTS 6.5.<br>
+                        Courses I took:</p>
+                        <ul>
+                            <li>Object Oriented Programming</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Database Management Principles</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <h3>Reviews from my Teachers</h3>
+                    <div class="reviews">
+                        <p>Hong Phuong was a good student.</p>
+                        <p class="teacher">Jane Doe <br>Assistant Professor</p>
+                    </div>
+                    <div class="reviews">
+                        <p>Phuong did a great performance on study.</p>
+                        <p class="teacher">Roseane Wood <br>Professor</p>
+                    </div>
+                </div>
+
+                <div class="contact-form mt-4">
+                    <h3>Contact Me</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-dark" onclick="toggleDarkMode()" style="margin: 20px;">Toggle Dark Mode</button>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('bg-dark-mode');
+            document.querySelector('.sidebar').classList.toggle('bg-dark-mode');
+            document.querySelector('.main-page').classList.toggle('bg-dark-mode');
+        }
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
